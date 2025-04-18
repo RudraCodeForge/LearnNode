@@ -1,9 +1,10 @@
-const http=require('http');
-const rs=require('./l5.js');
-const TRY=require('./selftry.js');
-const server=http.createServer(TRY);
 
-const PORT=3001;
-server.listen(PORT,()=>{
-    console.log(`Server is running on http://Localhost:${PORT}`);
+const http = require('http');
+const serverHandler = require('./selftry.js');
+
+const server = http.createServer(serverHandler);
+
+const PORT = 3000;
+server.listen(PORT, () => {
+    console.log(`Server is running on http://0.0.0.0:${PORT}`);
 });
