@@ -16,10 +16,12 @@ const rootDir = require('./utils/path');
 // HINGLISH: HTML forms dwara bheje gaye data ko parse karne ke liye
 app.use(express.urlencoded({ extended: true }));
 
+app.use(express.static(path.join(rootDir,'public','home.css')));
 // ENGLISH: Import and use home router
 // HINGLISH: Home router ko import aur use karna
 const HOMEROUTER = require('./routes/home');
 app.use(HOMEROUTER);
+
 
 // ENGLISH: Import and use contact router
 // HINGLISH: Contact router ko import aur use karna
