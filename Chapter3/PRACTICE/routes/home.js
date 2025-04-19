@@ -4,7 +4,7 @@ const rootDir = require('../utils/path');
 
 const HOMEROUTER = express.Router();
 
-HOMEROUTER.get("/", (req, res) => {
+HOMEROUTER.get("/", (req, res, next) => {
     console.log(`Handle / path`);
     res.sendFile(path.join(rootDir,'views','HOME.html'));
 });
