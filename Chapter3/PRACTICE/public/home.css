@@ -7,3 +7,21 @@ header{
   background-color: red;
   padding: 10px 20px;
 }
+main{
+  margin:20px;
+  margin-left:10%;
+  width:80%;
+  border:1px solid black;
+  padding:10px 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px grey;
+  text-align: center;
+}
+footer{
+  text-align:center;
+  bottom:0;
+  position: fixed;
+  width: 100%;
+  background-color:black;
+  color: white;
+}
