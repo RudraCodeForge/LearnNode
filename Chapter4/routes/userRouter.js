@@ -11,7 +11,6 @@ UserRouter.use((req, res, next) => {
 });
 
 UserRouter.get("/", (req, res, next) => {
-    res.sendFile(path.join(rootDir, "views", "HOSTHOME.html"));
-    console.log(`PRINT FORM USERROUTER`,REGISTEREDHOMES);
+    res.render('HOSTHOME',{REGISTEREDHOMES : REGISTEREDHOMES});
 });
 module.exports = UserRouter;

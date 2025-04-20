@@ -18,6 +18,15 @@
             ADD HOME
         </a>
     </main>
+
+    <ul>
+       <% REGISTERDHOMES.forEach(home{ %>
+          <li>
+              <% = home.Name %>
+          </li> 
+       <% }) %>
+    </ul>
+    
     <footer>
         <p>&copy; 2024 Airbnb Clone</p>
     </footer>
