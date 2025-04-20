@@ -43,4 +43,4 @@ mode = "sequential"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Lacture2 && node app.js"
+args = "cd Chapter4 && node app.js"

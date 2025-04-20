@@ -1,9 +1,10 @@
+
 const express = require("express");
 const path = require("path");
 const UserRouter = express.Router();
 
 const rootDir = require("../utils/pathUtil"); 
-const { REGISTEREDHOMES}=require('./hostRouter');
+const { REGISTEREDHOMES } = require('./hostRouter');
 
 UserRouter.use((req, res, next) => {
     console.log(req.method, req.url);
@@ -11,6 +12,7 @@ UserRouter.use((req, res, next) => {
 });
 
 UserRouter.get("/", (req, res, next) => {
-    res.render('HOSTHOME',{REGISTEREDHOMES : REGISTEREDHOMES});
+    res.render('HOSTHOME', { REGISTEREDHOMES: REGISTEREDHOMES });
 });
+
 module.exports = UserRouter;
