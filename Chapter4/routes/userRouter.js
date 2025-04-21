@@ -12,6 +12,7 @@ UserRouter.use((req, res, next) => {
 });
 
 UserRouter.get("/", (req, res, next) => {
+    console.log(`HOMES`,REGISTEREDHOMES);
     res.render('HOSTHOME', { REGISTEREDHOMES: REGISTEREDHOMES });
 });
 

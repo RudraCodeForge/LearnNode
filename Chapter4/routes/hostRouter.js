@@ -11,7 +11,7 @@ HostRouter.get("/add-home", (req, res, next) => {
 
 const REGISTEREDHOMES = [];
 HostRouter.post("/add-home", (req, res, next) => {
-  console.log("REGESTERD HOME FOR :-", req.body, req.body.Name);
+  console.log("REGESTERD HOME FOR :-", req.body);
 
   REGISTEREDHOMES.push({ NAME: req.body.Name, ADDRESS: req.body.Location });
 

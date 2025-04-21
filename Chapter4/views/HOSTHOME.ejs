@@ -6,19 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Home - Airbnb</title>
 </head>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizeing:border-box;
+        }
+        nav,a{
+            background-color:red;
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            letter-specing:2px;
+            padding:10px;
+            text-align:right;
+        }
+        header{
+            background-color:red;
+            padding:20px 30px;
+            margin-bottom:20px;
+        }
+        li{
+            box-shadow:3px 3px 5px 5px grey;
+            border-radius:10px;
+            padding:20px;
+            margin:20px 0;
+        }
+        span{
+            right:10px;
+            position:fixed;
+        }
+        footer{
+            width:100%;
+            background-color:black;
+            text-align:center;
+            color:white;
+            padding:10px;
+            bottom:0;
+            position:fixed;
+            font-weight:bold;
+            letter-specing:2px;
+        }
+    </style>
 <body>
-    <header>
-        <h1>WELCOME TO AIRBNB PROJECT</h1>
-    </header>
-    <main>
-        <a href="/host/add-home">ADD HOME</a>
-        
-        <ul>
-            <% REGISTEREDHOMES.forEach(home => { %>
-                <li><%= home.NAME %> - <%= home.ADDRESS %></li>
-            <% }); %>
-        </ul>
-    </main>
+    <%- include(./partials/header)%>
+    <ul>
+        <li>HOUSE NAME <span>ADDRESS</span></li>
+        <% REGISTEREDHOMES.forEach(home => { %>
+            <li><%= home.NAME%> 
+                <span>
+                  <%= home.ADDRESS%>
+                </span>
+            </li>
+        <% }); %>
+    </ul>
     <footer>
         <p>&copy; 2024 Airbnb Clone</p>
     </footer>
