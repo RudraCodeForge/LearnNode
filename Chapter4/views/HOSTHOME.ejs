@@ -1,4 +1,8 @@
 
+<!--
+ENGLISH: Main homepage that shows list of all registered homes
+HINGLISH: Ye main homepage hai jo saare registered homes ki list dikhata hai
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +10,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Home - Airbnb</title>
 
+    <!--
+    ENGLISH: Include common header styles
+    HINGLISH: Common header styles ko include karna
+    -->
     <%- include('partials/headstyle') %>
 </head>
 <body>
+    <!--
+    ENGLISH: Include navigation header
+    HINGLISH: Navigation header ko include karna
+    -->
     <%- include('partials/Header') %>
+    <!--
+    ENGLISH: List showing all homes with their names and addresses
+    HINGLISH: Saare homes ki list unke naam aur address ke saath
+    -->
     <ul>
         <li>HOUSE NAME <span>ADDRESS</span></li>
         <% REGISTEREDHOMES.forEach(home => { %>
