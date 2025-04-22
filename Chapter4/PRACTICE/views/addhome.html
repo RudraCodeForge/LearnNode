@@ -8,16 +8,18 @@
 </head>
 <body>
     <header>
-        <h1>FILL THE FORM</h1>
+        <h1>ADD HOME</h1>
     </header>
     <main>
         <form action='/success' method='POST'>
-            <input type='text' name='NAME' placeholder='ENTER YOUR NAME'>
-            <input type="email" name='EMAIL' placeholder='ENTER YOUR EMAIL'/>
-            <textarea name='MESSAGE' placeholder='ENTER YOUR MESSAGE'></textarea>
+            <input type='text' name='PROFILE' placeholder='ENTER YOUR HOME PHOTO LINK' required>
+            <input type='text' name='NAME' placeholder='ENTER YOUR HOME NAME' required>
+            <input type="text" name='LOCATION' placeholder='ENTER YOUR LOCATION' required/>
+            <input type='text' name='PRICE' placeholder='ENTER YOUR HOME PRICE PER NIGHT' required>
+            <input name='RATING' placeholder='ENTER REATING OF YOUR HOME' required></input>
             <br/><br/>
             <button type='submit'>
-                SEND MESSAGE
+                ADD HOME
             </button>
             
         </form>

@@ -7,13 +7,15 @@ const express = require('express');
 const path = require('path');
 const rootDir = require('../utils/path');
 
-const HOMEROUTER = express.Router();
+const USERROUTER = express.Router();
 
+const {REGISTERHOME} = require('./hostrouter');
 // ENGLISH: Handle root route '/' and send home page
 // HINGLISH: Root route '/' ko handle karke home page bhejna
-HOMEROUTER.get("/", (req, res, next) => {
+USERROUTER.get("/", (req, res, next) => {
     console.log(`Handle / path`);
-    res.sendFile(path.join(rootDir,'views','HOME.html'));
+    console.log(REGISTERHOME);
+    res.render('HOME', {REGISTERHOME: REGISTERHOME});
 });
 
-module.exports = HOMEROUTER;
+module.exports = USERROUTER;

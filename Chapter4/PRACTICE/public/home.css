@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Plaster&display=swap');
 *{
   margin:0;
   padding:0;
@@ -8,14 +9,57 @@ header{
   padding: 10px 20px;
 }
 main{
-  margin:20px;
-  margin-left:10%;
-  width:80%;
+  padding:20px;
+}
+.HOMES{
+  list-style:none;
+}
+.HOME{
+  width:100%;
+  padding:20px;
   border:1px solid black;
-  padding:10px 20px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px 1px grey;
-  text-align: center;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px grey;
+  margin:20px 0;
+}
+.p1{
+  font-family: "Plaster", system-ui;
+  letter-spacing:2px;
+  font-size:25px;
+  text-align:center;
+}
+.p2,.p3,.p4{
+  font-family: "Libre Baskerville", serif;
+  font-weight: bold;
+  margin:10px 0;
+}
+.himg{
+  width: 100%;
+  border-radius: 20px 0;
+}
+.MAIN{
+  width:100%;
+  display:flex;
+}
+.LEFT{
+  width:50%;
+  display:inline-block;
+  
+}
+.RIGHT{
+  width:50%;
+  display: inline-block;
+  text-align:right;
+}
+.Bbtn{
+  width:100%;
+  padding:10px;
+  font-family: "Almendra", serif;
+  font-weight:800;
+  letter-spacing:2px;
+  color:white;
+  background-color:black;
+  
 }
 footer{
   text-align:center;

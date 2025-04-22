@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICE SET 3</title>
+    <link rel='stylesheet' href='/home.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=location_on" />
+    <%- include('./partials/navstyle') %>
+</head>
+<body>
+    <%- include('./partials/NAVBAR') %>
+    <header>
+        <h1>WELCOME TO PRACTICE SET 4</h1>
+    </header>
+    <main>
+       <ul>
+           <% REGISTERHOME.forEach(home=>{ %>
+           <li class='HOMES'>
+               <div class='HOME'>
+                    <div class='images'>
+                        <img class='himg' src="<%= home.PHOTO %>" alt="Home Image">
+                    </div>
+                    <p class='p1'>
+                        <%= home.HOMENAME %>
+                    </p>
+                    <div class='MAIN'>
+                        <div class='LEFT'>
+                            <p class='p2'>
+                                LOCATION
+                            </p>
+                            <p class='p3'>
+                                PRICE
+                            </p>
+                            <p class='p3'>
+                                RATINGS
+                            </p>
+                        </div>
+                        <div class='RIGHT'>    
+                            <p class='p2'>
+                                <%= home.LOCATION %>
+                            </p>
+                            <p class='p3'>
+                                <%= home.PRICE %>₹/-
+                            </p>
+                            <p class='p3'>
+                                <%= home.RATINGS %>
+                            </p>
+                        </div>
+                    </div>
+                   <button class='Bbtn'>BOOK NOW</button>
+               </div>
+           </li>
+           <% }); %>
+       </ul> 
+    </main>
+    <footer>
+        <p>&copy; PRACTICE SET 3</p>
+    </footer>
+</body>
+</html>
