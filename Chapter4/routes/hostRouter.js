@@ -6,7 +6,7 @@ const HostRouter = express.Router();
 const rootDir = require("../utils/pathUtil");
 
 HostRouter.get("/add-home", (req, res, next) => {
-  res.sendFile(path.join(rootDir, "views", "ADDHOME.html"));
+  res.render('ADDHOME');
 });
 
 const REGISTEREDHOMES = [];
